@@ -22,8 +22,9 @@ if doc_url:
             result = converter.convert(doc_url)
             st.success("Conversion completed successfully.")
         st.markdown(result.document.export_to_markdown())
-        file_contents = (result.document.export_to_markdown())
-        st.download_button("Download to file", file_contents, icon=":material/file_save:", file_name='coverted_doc.md')
+        file_contents = result.document.export_to_markdown()
+        st.download_button("Download to file", file_contents, \
+        icon=":material/file_save:", file_name='coverted_doc.md')
     except RuntimeError as e:
         st.error("Error converting PDF document:", str(e))
 else:
