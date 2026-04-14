@@ -1,14 +1,14 @@
 """Program to convert PDF, HTML and other document formats to
-markdown format using the Docling library"""
+markdown format using the Docling and Streamlit libraries"""
 
 import streamlit as st
 from docling.document_converter import DocumentConverter
 
 # Display the title of the page
-st.title("Convert Documents with Docling")
+st.title("URL to Markdown Converter")
 
 # Display a message to inform users about the purpose of the tool
-st.write("This tool uses Docling to convert various document formats into Markdown format.")
+st.write("This tool converts various document formats into Markdown format.")
 
 # Create a text input field for users to enter the URL of the PDF document
 doc_url = st.text_input("Enter the URL of the document to convert:", "")
