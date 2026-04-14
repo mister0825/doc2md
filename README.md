@@ -1,9 +1,10 @@
 # doc2md
-Convert PDF documents to Markdown format using the Docling library within a Streamlit web app.
+Convert various document formats to Markdown format using the Docling library within a Streamlit web interface or CLI.
 
 Requirements:
-- Python 3.10 / 3.11 / 3.12 
+- Python >= 3.10
 - [docling](https://github.com/DS4SD/docling)
 - [streamlit](https://streamlit.io)
+- Python rich library
 
-Run with 'streamlit run convertdoc.py'
+Run Streamlit version with 'streamlit run convertdoc.py'
